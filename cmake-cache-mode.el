@@ -3,7 +3,10 @@
 ;; Copyright (c) 2024 Samuel B. Johnson
 
 ;;; Commentary
-;;
+;; Provides a major mode `cmake-cache-mode` with syntax highlighting for
+;; CMakeCache.txt files.
+
+;; Licensed under the WRFPL
 
 ;;; Code
 
@@ -46,7 +49,7 @@
        '(cmake-cache-font-lock-keywords nil t)))
 
 ;;;###autoload
-(add-to-list 'auto-mode-alist '("CMakeCache\\.txt" . 'cmake-cache-mode))
+(add-to-list 'auto-mode-alist '("CMakeCache\\.txt" . cmake-cache-mode))
 
 (provide 'cmake-cache-mode)
 
